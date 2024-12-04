@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="final" content="final project for GIT215, it's a resort webpage for The Hot Cocoa Resort">
+        <title>Contact Us!</title>
+        <link rel="stylesheet" href="obfuscator.css">
+        <link rel="stylesheet" href="https://use.typekit.net/pnt3jrp.css">
+        <link rel="stylesheet" href="https://use.typekit.net/pnt3jrp.css">
+        <link rel="icon" href="images/favicon.png">
+    </head>
+    <body>
+        <header>
+            <h1>The Hot Cocoa Resort</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#address">Address</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="images/swiss-valley.jpg" alt="Swiss Valley" id="swiss-valley">
+        </header>
+        <main class="contact-body">
+                <h2>Contact Us</h2>
+                <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!</p>
+                <img src="images/swiss-peak.jpg" alt="Swiss peak">
+                <section class="form">
+                    <form action="submit_form.php" method="POST">
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" name="full-name" required>
+
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+
+                        <input type="radio" id="contact-email" name="contact-method" value="email" required>
+                        <label for="contact-email">Email</label>
+
+                        <input type="radio" id="contact-phone" name="contact-method" value="phone" required>
+                        <label for="contact-phone">Phone</label>
+
+                        <label for="comments">Comments:</label>
+                        <textarea id="comments" name="comments" rows="4" required></textarea>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </section>
+        </main>
+        <footer>
+            <p>Copyright ©2023 - The Hot Cocoa Resort</p>
+            <p>This site is for educational purposes only</p>
+        </footer>
+    </body>
+</html>
